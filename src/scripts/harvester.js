@@ -1,14 +1,14 @@
 import { Plant } from "./lib/datatypes.js";
 import { plantTypeToPlant, plantToOutput, plantToType } from "./lib/transformations.js";
-import { CORN_TYPE, createIndividualCorn } from "./seeds/index.js";
+import { CORN_TYPE, CORN_OUTPUT_DIVISOR, createIndividualCorn } from "./seeds/index.js";
 
 /**
- * Divide corn output by 2 due to sales to cattle ranchers
+ * Divide corn output due to sales to cattle ranchers
  * @function cornOutputToOutput
  * @param {Number} cornOutput
  * @returns {Number}
  */
-export const cornOutputToOutput = (cornOutput = 0) => cornOutput / 2;
+export const cornOutputToOutput = (cornOutput = 0) => cornOutput / CORN_OUTPUT_DIVISOR;
 
 /**
  * Modify output if provided type is corn
