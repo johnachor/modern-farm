@@ -2,7 +2,8 @@ import { Plant } from '../lib/datatypes.js';
 
 export const CORN_TYPE = "Corn",
     CORN_HEIGHT = 180,
-    CORN_OUTPUT = 6;
+    CORN_OUTPUT = 6,
+    CORN_OUTPUT_DIVISOR = 2;
 
 /**
  * @function createIndividualCorn
