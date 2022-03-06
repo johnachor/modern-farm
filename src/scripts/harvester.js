@@ -49,10 +49,9 @@ export const harvestPlant = (plant = new Plant()) => {
 }
 
 /**
- * Returns an array containing the combined harvest of all plants in the input array
  * @function harvestPlants
  * @param {Plant[]} plantField
- * @returns {Plant[]}
+ * @returns {Plant[]} - the combined harvest of all plants in the input array
  */
 export const harvestPlants = (plantField = []) => plantField
     .map(harvestPlant)

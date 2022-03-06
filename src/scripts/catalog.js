@@ -8,6 +8,11 @@ import { plantToType } from "./lib/transformations.js";
  */
 export const plantToCard = (plant = new Plant()) => `<section class="plant">${plantToType(plant)}</section>`;
 
+/**
+ * @function Catalog
+ * @param {Plant[]} harvestedPlants
+ * @returns {String} -- HTML string containing section elements for all plants in the provided array
+ */
 export const Catalog = (harvestedPlants = []) => harvestedPlants
     .map(plantToCard)
     .join("");

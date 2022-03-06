@@ -4,8 +4,10 @@ import { createPlan } from './plan.js';
 import { plantSeeds } from './tractor.js';
 import { Catalog } from './catalog.js';
 
-const plan = createPlan();
+plantSeeds(createPlan());
 
-plantSeeds(plan);
-
-document.querySelector(".container").innerHTML += Catalog(harvestPlants(usePlants()));
+document.querySelector(".container").innerHTML += Catalog(
+    harvestPlants(
+        usePlants()
+    )
+);
