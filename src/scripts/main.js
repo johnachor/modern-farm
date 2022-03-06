@@ -6,4 +6,8 @@ import { Catalog } from './catalog.js';
 
 plantSeeds(createPlan());
 
-document.querySelector(".container").innerHTML += Catalog(harvestPlants(usePlants()));
+document.querySelector(".container").innerHTML += Catalog(
+    harvestPlants(
+        usePlants()
+    )
+);
